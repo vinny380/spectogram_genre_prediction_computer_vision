@@ -14,5 +14,5 @@ v_d = "blues_train_vectors"
 
 rock_matrix_dir = 'rock_train_matrices'
 rock_vec = 'rock_train_vectors'
-# flatten_matrices(d, v_d)
+flatten_matrices(d, v_d)
 flatten_matrices(rock_matrix_dir, rock_vec)
