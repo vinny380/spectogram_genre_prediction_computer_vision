@@ -1,8 +1,10 @@
 # Music Genre Classification with Deep Learning
 
+## Overview:
+- This project focuses on classifying music genres using Deep Learning techniques, particularly Convolutional Neural Networks (CNNs). Spectrograms or sonograph images of music were utilized to classify songs into seven distinct categories: Classical, Electronic, Folk, Hip-Hop, Pop, Punk, or Rock.
 
 ## How to Run Predictions:
-- We've attached a really small portion of the dataset (since it's so heavy) so you could experiment with the model. Each class has 10 samples.
+- We've attached a small portion of the dataset (since it's so heavy) so you could experiment with the model. Each class has 10 samples.
 - run ```python3 predict.py ResNetCustom.pth /relative/path/to/image```
 Example:
 Let's say you want to predict an Electronic song, with file name 000152.jpg, you'd run:
@@ -19,10 +21,6 @@ into one folder called data and you're good to go.
 - Feel free to use the create_subsampled_dataset() function to create a smaller sample of the dataset once you have it, so you don't go over ALL the images in the dataset.
 - After that, simply re-run the Jupyter Notebook or run ```python3 main.py```
 - Make sure you're in the right directory (Deep Learning)
-
-
-## Overview:
-- This project focuses on classifying music genres using Deep Learning techniques, particularly Convolutional Neural Networks (CNNs). Spectrograms or sonograph images of music were utilized to classify songs into seven distinct categories: Classical, Electronic, Folk, Hip-Hop, Pop, Punk, or Rock.
 
 ## Dataset:
 - The dataset used for this task was the POG Music Spectrogram dataset, which contains spectrogram images for 19 different music genres. However, due to poor dataset management, only the training set was utilized, consisting of approximately 17,500 samples. The dataset lacked labels for the training set, posing a challenge for supervised learning tasks. Hence we removed extremely underepresented classes, going from 19 to 7 classes, due to computational resources available (i.e. lack of GPU).
